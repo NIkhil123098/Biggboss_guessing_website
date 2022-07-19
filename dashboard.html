@@ -1,0 +1,1855 @@
+<html>
+  <head>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <style>
+.a1
+{
+  position:absolute;
+  width:95%;
+  left:2.5%;
+  top:1%;
+  height:11%;
+  border-radius:1% ;
+  
+  box-shadow: 1px 1px 15px lightgray;
+}
+@font-face {
+  font-family:myFirstFont;
+  src: url(monst.otf);
+
+}
+.rec
+{
+  
+  padding:10px;
+  font-size:x-large;
+  border-radius: 500px;
+  background: darkgreen;
+  color:white;
+}
+
+.wit
+{
+  
+  padding:10px;
+  font-size:x-large;
+  border-radius: 500px;
+  background: darkred;
+  color:white;
+}
+@font-face {
+  font-family:algeria;
+  src: url(algeria.TTF);
+  
+}
+html,body
+{
+  scroll-behavior: smooth;
+font-family:myFirstFont;
+background: black;
+color:white;
+}
+.a2
+{
+  color: purple;
+  font-size: larger;
+}
+.a3
+{
+  position:absolute;
+  width:95%;
+  left:2.5%;
+  top:13%;
+  
+
+  height:100%;
+}
+
+.box1{
+  position:absolute;
+  left:3%;
+
+	background: white;
+	border: 1px solid purple;
+	width:500px;
+	height:130px;
+	padding:10px;
+	float:left;
+  top:1%;
+    width:33.33%;
+    padding: 50px;
+    color:black;
+    box-shadow: 1px 1px 20px lightgray;
+} 
+
+
+.box1:hover{
+  
+  background:violet;
+  color:white;
+  opacity:0.3;
+  
+}
+
+.box2 {
+	background: white;
+  border: 1px solid red;
+	width:500px;
+  position:absolute;
+  left:53%;
+  color:black;
+  top:1%;
+	height:130px;
+	padding:10px;
+	float:right;
+    width:33.33%;
+    padding: 50px;
+    box-shadow: 1px 1px 20px lightgray;
+}
+.box2:hover{
+  
+  background:red;
+  color:white;
+  opacity:0.3;
+  
+}
+
+.box5{
+	background: white;
+border: 1px solid black;
+	width:500px;
+	height:130px;
+	padding:10px;
+  color:black;
+  position:absolute;
+  left:3%;
+  
+	float:left;
+    width:33.33%;
+    padding: 50px;
+    box-shadow:1px 1px 20px lightgray;
+} 
+
+.box3{
+	background: white;
+border: 1px solid black;
+	width:500px;
+	height:130px;
+	padding:10px;
+  color:black;
+  position:absolute;
+  left:3%;
+  
+	float:left;
+    width:33.33%;
+    padding: 50px;
+    box-shadow:1px 1px 20px lightgray;
+} 
+.box7{
+	background: white;
+border: 1px solid black;
+	width:500px;
+	height:130px;
+	padding:10px;
+  color:black;
+  position:absolute;
+  left:3%;
+  
+	float:left;
+    width:33.33%;
+    padding: 50px;
+    box-shadow:1px 1px 20px lightgray;
+} 
+
+.box9{
+	background: white;
+border: 1px solid black;
+	width:500px;
+	height:130px;
+	padding:10px;
+  color:black;
+  position:absolute;
+  left:3%;
+  
+	float:left;
+    width:33.33%;
+    padding: 50px;
+    box-shadow:1px 1px 20px lightgray;
+} 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close4 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close5 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.close5:hover,
+.close5:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.box3:hover{
+  
+  background:coral;
+  color:white;
+  
+}
+.box4:hover{
+  
+  background:darkgreen;
+  color:white;
+  opacity:0.3;
+}
+.box3:hover{
+  
+  background:goldenrod;
+  color:white;
+  opacity:0.3;
+}
+.box5:hover{
+  
+  background:darkslateblue;
+  color:white;
+  opacity:0.3;
+}
+
+
+.box6:hover{
+  
+  background:indianred;
+  color:white;
+  opacity:0.3;
+}
+
+.box7:hover{
+  
+  background:lightcoral;
+  color:white;
+  opacity:0.5;
+}
+.box8:hover{
+  
+  background:plum;
+  color:white;
+  opacity:0.5;
+}
+
+.box9:hover{
+  
+  background:royalblue;
+  color:white;
+  opacity:0.7;
+}
+.box4{
+	background: white;
+border: 1px solid darkblue;
+	width:500px;
+  position:absolute;
+  left:53%;
+  color:black;
+	height:130px;
+	padding:10px;
+	float:right;
+    width:33.33%;
+    padding: 50px;
+    box-shadow: 1px 1px 20px lightgray;
+} 
+.box6{
+	background: white;
+border: 1px solid darkblue;
+	width:500px;
+  position:absolute;
+  left:53%;
+  color:black;
+	height:130px;
+	padding:10px;
+	float:right;
+    width:33.33%;
+    padding: 50px;
+    box-shadow: 1px 1px 20px lightgray;
+} 
+.box8{
+	background: white;
+border: 1px solid darkblue;
+	width:500px;
+  position:absolute;
+  left:53%;
+  color:black;
+	height:130px;
+	padding:10px;
+	float:right;
+    width:33.33%;
+    padding: 50px;
+    box-shadow: 1px 1px 20px lightgray;
+} 
+.notify-badge{
+    position: absolute;
+    right:-20px;
+    top:10px;
+    background:red;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:10px 10px;
+    font-size:20px;
+}
+.box10{
+	background: white;
+border: 1px solid darkblue;
+	width:500px;
+  position:absolute;
+  left:53%;
+  color:black;
+	height:130px;
+	padding:10px;
+	float:right;
+    width:33.33%;
+    padding: 50px;
+    box-shadow: 1px 1px 20px lightgray;
+} 
+.a{
+width:200px;
+padding:15px;
+border-radius: 10%;;
+height:auto;
+font-size:x-large;
+background: orangered;
+
+color:white;
+
+}
+table, td {
+  border: 1px solid black;
+}
+
+td
+{
+  padding:10px;
+}
+.bor
+{
+ 
+  padding:10px;
+ 
+  border:1px solid lightgray;
+border-radius: 500px;
+}
+
+  </style>
+  </head>
+    <body>
+      
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" style="color:black">
+          <span class="close">&times;</span>
+          <h3 align="center" style="color:orangered">BiggBoss 5 Winner </h3>
+          
+          <div align="center"><img src="siri.jpg" style="border-radius:50%;"><br><br><button class="a" align="center" onclick="v1()">Vote</button><br><br><br>
+            
+         
+          </div>
+          <div align="center"><img src="sreeram.jpg" style="border-radius:70%;"><br><br><button class="a" align="center" onclick="v2()">Vote</button><br><br><br></div>
+            <div align="center"><img src="sunny.jpg" style="border-radius:50%;"><br><br><button class="a" align="center" onclick="v3()">Vote</button><br><br><br></div>
+              <div align="center"><img src="shannu.jpeg" style="border-radius:50%;"><br><br><button class="a" align="center" onclick="v4()">Vote</button><br><br><br></div>
+                <div align="center"><img src="kajal.jpeg" style="border-radius:50%;"><br><br><button class="a" align="center" onclick="v5()">Vote</button><br><br><br></div>
+                  <div align="center"><img src="maanas.jpeg" style="border-radius:50%;"><br><br><button class="a" align="center" onclick="v6()">Vote</button><br><br><br></div>
+
+        </div>
+      
+      </div>
+
+
+
+
+
+
+
+     
+      
+
+
+
+
+
+
+
+      <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" style="color:black">
+          <span class="close1">&times;</span>
+          <h3 align="center" style="color:orangered">% Amount Quiter </h3>
+          <p style="font-size: xx-small;color:lightgray"> Who will quit by taking some amount from finalist</p>
+          <i class="fa fa-info-circle" aria-hidden="true" style="font-size: 13px;color:lightgray"></i>&nbsp;
+          <span style="font-size: xx-small;color:lightgray">If your bet amount is x,After correct guess You will earn 2x amount.
+          For eg : If you bet 100 rs , and if the guess is correct then you can earn 200rs</span>
+<br><br>
+<form id="test">
+  <input type="radio" value="Shanmukh" id="q1" name="q">&nbsp;Shanmukh <br><br>
+  <input type="radio" value="Sunny" id="q2" name="q">&nbsp;Sunny <br><br>
+  <input type="radio" value="Siri" id="q3" name="q">&nbsp;Siri <br><br>
+  <input type="radio" value="Kajal" id="q4" name="q">&nbsp;Kajal <br><br>
+  <input type="radio" value="Maanas" id="q5" name="q">&nbsp;Manas <br><br>
+  <input type="radio" value="Sreeram" id="q6" name="q">&nbsp;Sreeram <br><br>
+</form>
+<br><br>
+<h3> Point</h3>
+
+<span onclick="c1()" class="bor" align="center">&nbsp;&nbsp;+10&nbsp;&nbsp; </span>
+
+<span onclick="c2()" class="bor" align="center">&nbsp;&nbsp;&nbsp;+100&nbsp;&nbsp;&nbsp;</span>
+<span onclick="c3()" class="bor" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span onclick="c4()" class="bor" align="center">&nbsp;&nbsp;&nbsp;&nbsp;+10000&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+<br>
+<br>
+
+<h3>Amount</h3>
+<span><i class="fa fa-rupee" style="font-size:20px;color:black"></i> &nbsp;</span><span id="am" style="color:green;font-size: xx-large;">0</span>
+
+
+</form>
+<br>
+<button type="submit" class="submit" style="background:purple;border-radius: 500px;padding:20px;color:white;float:right" onclick="submit1()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+
+<br><br><br><br>
+      </div>
+
+</div>
+
+
+
+
+
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="color:black">
+    <span class="close2">&times;</span>
+    <h3 align="center" style="color:orangered">- Your Records - </h3>
+    <table id="myTable" border:1px style="color:black;width:100%;text-align: center;" >
+      <tr>
+        
+        <td style="background:orangered;color:white;font-size: larger;">Mode of vote/bet</td>
+        <td style="background:orangered;color:white;font-size: large;">Amount</td>
+        <td style="background:orangered;color:white;font-size: large;">selected
+        
+        
+        </td>
+
+        
+      </tr>
+      
+    </table>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="color:black">
+    <span class="close3">&times;</span>
+    <h3 align="center" style="color:orangered">Week Elimination </h3>
+    <p style="font-size: xx-small;color:lightgray"> Who will elimination this Week?</p>
+    <i class="fa fa-info-circle" aria-hidden="true" style="font-size: 13px;color:lightgray"></i>&nbsp;
+    <span style="font-size: xx-small;color:lightgray">If your bet amount is x,After correct guess You will earn 1.5x amount.
+    For eg : If you bet 100 rs , and if the guess is correct then you can earn 150rs</span>
+<br><br>
+<form id="testt">
+<input type="radio" value="Shanmukh" id="qq1" name="qq">&nbsp;Shanmukh <br><br>
+<input type="radio" value="Sunny" id="qq2" name="qq">&nbsp;Sunny <br><br>
+<input type="radio" value="Siri" id="qq3" name="qq">&nbsp;Siri <br><br>
+<input type="radio" value="Kajal" id="qq4" name="qq">&nbsp;Kajal <br><br>
+<input type="radio" value="Maanas" id="qq5" name="qq">&nbsp;Manas <br><br>
+<input type="radio" value="Sreeram" id="qq6" name="qq">&nbsp;Sreeram <br><br>
+</form>
+<br><br>
+<h3> Point</h3>
+
+<span onclick="cc1()" class="bor" align="center">&nbsp;&nbsp;+10&nbsp;&nbsp; </span>
+
+<span onclick="cc2()" class="bor" align="center">&nbsp;&nbsp;&nbsp;+100&nbsp;&nbsp;&nbsp;</span>
+<span onclick="cc3()" class="bor" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span onclick="cc4()" class="bor" align="center">&nbsp;&nbsp;&nbsp;&nbsp;+10000&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+<br>
+<br>
+
+<h3>Amount</h3>
+<span><i class="fa fa-rupee" style="font-size:20px;color:black"></i>&nbsp;</span><span id="amm" style="color:green;font-size: xx-large;">0</span>
+
+
+</form>
+<br>
+<button type="submit" class="submit" style="background:purple;border-radius: 500px;padding:20px;color:white;float:right" onclick="submit11()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+
+<br><br><br><br>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal4" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="color:black">
+    <span class="close4">&times;</span>
+    <h3 align="center" style="color:orangered"> Top - 5 Contestants </h3>
+    <p style="font-size: xx-small;color:lightgray"> Guess Correct Order of Top-5 and earn money</p>
+    <i class="fa fa-info-circle" aria-hidden="true" style="font-size: 13px;color:lightgray"></i>&nbsp;
+    <span style="font-size: xx-small;color:lightgray">If your bet amount is x,After correct guess You will earn 2x amount.
+    For eg : If you bet 100 rs , and if the guess is correct then you can earn 200rs</span>
+<br><br>
+
+<form>
+
+	Top - 1 : &nbsp; <select id="s1" style="padding:10px;border-radius:500px">
+		<option>Kajal</option>
+		<option>Siri</option>
+		<option>Sunny</option>
+		<option>Shanmukh</option>
+		<option>Maanas</option>
+		<option>Sriram</option>
+	</select> <br><br>
+  Top - 2 : &nbsp;<select id="s2" style="padding:10px;border-radius:500px">
+			<option>Kajal</option>
+			<option>Siri</option>
+			<option>Sunny</option>
+			<option>Shanmukh</option>
+			<option>Maanas</option>
+			<option>Sriram</option>
+		</select><br><br>
+    Top - 3 :&nbsp;<select id="s3" style="padding:10px;border-radius:500px">
+				<option>Kajal</option>
+				<option>Siri</option>
+				<option>Sunny</option>
+				<option>Shanmukh</option>
+				<option>Maanas</option>
+				<option>Sriram</option>
+			</select> <br><br>
+      Top - 4 :&nbsp;<select id="s4" style="padding:10px;border-radius:500px">
+					<option>Kajal</option>
+					<option>Siri</option>
+					<option>Sunny</option>
+					<option>Shanmukh</option>
+					<option>Maanas</option>
+					<option>Sriram</option>
+				</select> <br><br>
+        Top - 5 :&nbsp;<select id="s5" style="padding:10px;border-radius:500px">
+						<option>Kajal</option>
+						<option>Siri</option>
+						<option>Sunny</option>
+						<option>Shanmukh</option>
+						<option>Maanas</option>
+						<option>Sriram</option>
+					</select>
+          </form>
+
+
+
+<br><br>
+<h3> Point</h3>
+
+<span onclick="ccc1()" class="bor" align="center">&nbsp;&nbsp;+10&nbsp;&nbsp; </span>
+
+<span onclick="ccc2()" class="bor" align="center">&nbsp;&nbsp;&nbsp;+100&nbsp;&nbsp;&nbsp;</span>
+<span onclick="ccc3()" class="bor" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span onclick="ccc4()" class="bor" align="center">&nbsp;&nbsp;&nbsp;&nbsp;+10000&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+<br>
+<br>
+
+<h3>Amount</h3>
+<span><i class="fa fa-rupee" style="font-size:20px;color:black"></i> &nbsp;</span><span id="ammm" style="color:green;font-size: xx-large;">0</span>
+
+
+</form>
+<br>
+<button type="submit" class="submit" style="background:purple;border-radius: 500px;padding:20px;color:white;float:right" onclick="submit111()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+
+<br><br><br><br>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal5" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="color:black">
+    <span class="close5">&times;</span>
+    <h3 align="center" style="color:orangered">Enter Your Bank details </h3>
+    <p style="font-size: xx-small;color:lightgray"> <P>Please Check your bank details twice </P></p>
+    <i class="fa fa-info-circle" aria-hidden="true" style="font-size: 13px;color:lightgray"></i>&nbsp;
+    <span style="font-size: x-small;color:lightgray">Please Note that the bank details should be of the details from which you are proceeding for recharge</span>
+<br><br>
+<form>
+  <i class='fa fa-id-card' style='font-size:20px;color:orange'></i> <span style="color: orange;">Bank Holder Name :</span>
+  &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter Your bank Holder Name" id="bank1" style="border-radius: 500px;padding:15px;"><br><br>
+  <i class="fa fa-bank" style="font-size:20px;color:orange"></i> <span style="color: orange;">Bank Account Number :</span>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" maxlength="11" id="bank2" placeholder="Enter Your Bank number" style="border-radius: 500px;padding:15px;"><br><br>
+
+
+  <i class="fa fa-bank" style="font-size:20px;color:orange"></i> <span style="color: orange;">Confirm Bank Account Number :</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" id="bank3" maxlength="11" placeholder="Re-Enter Your Bank number" style="border-radius: 500px;padding:15px;"><br><br>
+
+
+</form>
+<button type="submit" class="submit" style="background:purple;border-radius: 500px;padding:20px;color:white;float:right" onclick="submit1111()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proceed to pay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;
+<br><br><br>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        <div class="a1">
+<img src="biglogo.jpeg" height="100%" width="25%" style="position:absolute;left:70%">
+<h3 class="a2" style="font-family:algeria;" align="center">BIGGBOSS 5 Telugu Betting Zone</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User : <span id="user"> NaN</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email : <span id="email"> NaN</span></p>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balance : <i class="fa fa-rupee" style="font-size:x-large;color:green"></i><span id="bal" style="font-size: x-large;color:green">NaN</span></span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="rec" id="myBtn5">Recharge</button>
+<button class="wit" onclick="withdraw()">Withdraw</button>
+          </div>
+
+        <div class="a3">
+          
+          <div class="box1" onclick="top5()" id="myBtn4">
+            <span class="notify-badge">Betting X 2</span>
+            <div align="center"><i class="fa fa-group" style="font-size:40px;color:red" align="center"></i></div>
+            
+            <br><h1>TOP -5 Contestants</h1>
+            <p style="color:silver"> { Guess the corect sequence of top 5 contestants  }</p>
+        </div>
+        <div class="box2" id="myBtn3">
+          <span class="notify-badge">Betting X 1.5</span>
+          <div align="center"><i class="fa fa-remove" style="font-size:50px;color:purple"></i></i> </div><br>
+          <H1> Week Elimination</H1>
+
+          <p style="color:silver"> { Who will eliminate this week ? }</p>
+        </div>
+        <br><br>
+        </body>
+        
+        <body>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            
+            
+            <div class="box4" id="myBtn1">
+              <span class="notify-badge">Betting X 2</span>
+              <div align="center"><i class="fa fa-rupee" style="font-size:40px;color:green"></i> </div>
+              <H1> % Amount Quiter</H1>
+              <p style="color:silver"> { Who will quit by taking some amount of money }</p>
+            </div>
+        
+        <div class="box3" id="myBtn">
+          <div align="center">
+            <i class="fa fa-trophy" style="font-size:48px;color:gold"></i>
+          </div>
+          
+          <h1>Biggboss 5 Winner</h1>
+          <p style="color:silver"> { You can update Your answer }</p>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="box5" onclick="epi()">
+          <div align="center"><i class="fa fa-video-camera" aria-hidden="true" style="font-size:40px;color:indigo"></i></div>
+          <H1> Recent Episode</H1>
+          <p style="color:silver"> { Watch bb5 season recent yesterday's/today's episode }</p>
+        </div>
+        <div class="box6" onclick="vote()">
+          <div align="center"><i class="fa fa-check-square-o" style="font-size:48px;color:brown"></i></div>
+          <H1> All Votes Here</H1>
+          <p style="color:silver"> { You can vote different types of polls }</p>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="box7" id="myBtn2">
+          <div align="center"><i class="fa fa-fax" style="font-size:48px;color:hotpink"></i></div>
+          <H1> Check Your Data</H1>
+          <p style="color:silver"> { Your bettings,transactions,records }</p>
+        </div>
+        <div class="box8" onclick="unseen()">
+          <div align="center"><i class="fa fa-eye-slash" aria-hidden="true" style="font-size:48px;color:maroon"></i></div>
+          <H1> <Ri:a>Recent Unseen </Ri:a></H1>
+          <p style="color:silver"> { watch recent unseen episode by clicking it }</p>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="box9" onclick="spicy()">
+          <div align="center"><i class="fa fa-gift" style="font-size:48px;color:mediumslateblue"></i></div>
+          <H1> BB5 Spicy scenes</H1>
+          <p style="color:silver"> { You can watch special scenes of bb5 here }</p>
+        </div>
+        <div class="box10">
+          
+          <div align="center"><i class="fa fa-info-circle" aria-hidden="true" style="font-size: 40px;"></i></div>
+          <H1> <a href="#section1" style="color:black;">BB5 Telugu INFO </a></H1>
+          <p style="color:silver"> { About Biggboss 5 telugu}</p>
+        </div>
+        
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div style="font-size: x-large;" id="section1">
+<h1 style="color:red"><b>About Biggboss 5 season (Telugu)</b> </h3>
+  <p>Introduction</p>
+  <p>Bigg Boss 5 is the fifth season of the Telugu version of the Indian reality television series Bigg Boss based on Dutch series Big Brother. The show premiered on 5 September 2021 on Star Maa and Disney+ Hotstar with Akkineni Nagarjuna as a host for the third time</p>
+<br>
+<p>Delay<br><br>
+  The fifth season of the show was planned to launch in June 2021, but it was delayed due to the second wave of the COVID-19 pandemic in India.[2]
+  <br><br><br>
+  Eye Logo<br><br>
+  The eye of Bigg Boss is shaped in the form of a maze. It is a hint at how living in the house is a maze and only a few people can come out of it unaffected.
+  <br><br><br>
+  Teaser<br><br>
+  The show organizers officially released the eye logo teaser on 1 August 2021. The promo shoots of the show were directed by Prasanth Varma.[3][4] On 26 August 2021, it is confirmed that the show will premiere on 5 September 2021 on Star Maa.[5]
+  <br><br><br>
+  Bigg Boss 5 Buzzz<br><br>
+  Bigg Boss 5 Buzzz is an Indian Telugu-language television talk show about the reality television series Bigg Boss Telugu. The host Ariyana Glory conducts the talk show with the evicted contestants of Bigg Boss 5 on every Monday. The show premiered on 13 September 2021 onwards on Star Maa Music. The unseen portions of episodes that were not aired on television are streamed on Disney+ Hotstar and aired on Star Maa Music as Bigg Boss 5 Buzzz</p>
+        
+<br><br><br>
+Contestants:-
+<br><br>
+Siri Hanmanth – Television actress and YouTuber. She is well known for acting in TV serials like Evare Nuvvu Mohini, Agnisakshi and Savitramma Gari Abbayi.[7]
+<br>VJ Sunny – Video jockey and television actor. He is best known for his role in Kalyana Vaibhogam.[7]
+<br>Lahari Shari – Film actress known for the movies Arjun Reddy and Zombie Reddy.[7][8]
+<br>Sreerama Chandra – Playback singer, musician, and film actor. He was the winner of Indian Idol.[7][8]
+<br>Anee Master (Anita Lama) – Dance choreographer and television judge.[7] She is known for her work on Mahanati and has been a judge of various reality dance shows, including Dhee and Dancee Plus.
+<br>Lobo (Mohammad Khayyum) – Former video jockey on Maa Music and film actor.[7]
+<br>Shailaja Priya – Film and television actress.[7] She is part of the popular soap operas Kotha Bangaaram,No.1 Kodalu, Sasirekha Parinayam and Priya Sakhi.[8]
+<br>Jaswanth Padala – Model and television actor.[9] He appeared in the soap opera Saptha Mathrika and the film Entha Manchivaadavuraa.[8]
+<br>Priyanka Singh– Television personality.[7] She is part of the television comedy show Jabardasth and is the second transgender contestant in the show.[8]
+<br>Shanmukh Jaswanth – YouTuber.[7] He is best known for his role of Shannu in the short video The Viva and the web-series The Software DevLOVEper and appeared in the 2019 film Nannu Dochukunduvate[8]
+<br>Hamida Khatoon – Film actress. She is known for the film Sahasam Cheyara Dimbaka.[7][8]
+<br>Nataraj Master – Dance choreographer and television judge.[7] He was part of the reality dance show Aata.
+<br>Sarayu Roy – YouTuber.[7] She is a part of 7 Arts YouTube channel.
+<br>Vishwa Raj – Film and television actor.[7] He appeared in the TV series Yuva, Ganga Tho Rambabu and Ganga and Manga.[8]
+<br>Umadevi Maria – Film and television actress. She is best known for her role Bhagyalakshmi in the television series Karthika Deepam.[7][8]
+<br>Maanas Nagulapalli – Film and television actor. He is part of the television series Koyilamma.[7]
+<br>Kajal Seelamsetty – Voice actor and radio personality from Radio Mirchi.[7]
+<br>Swetha Varma – Film actress,[7] known for films such as Pachchis, Mithai and Raani.[8]
+<br>Ravi Kiran – Television presenter, radio personality and film actor.[8]
+
+
+<br><br><br>
+
+<div style="border-radius:1%;border-top: 2px solid blue;border-left: 2px solid indigo;border-right:2px solid palevioletred;padding:10px;">
+  <h3 style="color:red" align="center">Contact Us!</h3>
+  &nbsp;&nbsp;<i class="fa fa-envelope"></i>&nbsp; biggbossbetting@gmail.com
+  <div style="float:right"><i class="fa fa-whatsapp" aria-hidden="true" style="color:green;font-size:30px" onclick="wha()"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" aria-hidden="true" onclick="tel()" style="color:red;font-size:30px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+</div>
+      </div>
+
+    
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+ <script>
+   function withdraw()
+   {
+   alert("You can Withdraw on Dec 19 ; On the day of bb5 season ends ! ");
+   }
+ </script>
+        <script>
+          function top5()
+          {
+            window.location.href="top5.html";
+          }
+             const firebaseConfig = {
+  apiKey: "AIzaSyACaDrHs0u3i4qywXDxSjK76P1Emvdb3sQ",
+  authDomain: "bigboss-dba40.firebaseapp.com",
+  projectId: "bigboss-dba40",
+  storageBucket: "bigboss-dba40.appspot.com",
+  messagingSenderId: "589923447712",
+  appId: "1:589923447712:web:2d966d45da6168c65beac5",
+  measurementId: "G-GBCPPJCESN"
+};
+
+firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(user.uid).once("value")
+  .then(function(snap) {
+  
+
+	
+  });
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+
+
+        </script>
+
+<script>
+  var modal2 = document.getElementById("myModal2");
+    
+    // Get the button that opens the modal
+    var btn2 = document.getElementById("myBtn2");
+    
+    // Get the <span> element that closes the modal
+    var span2 = document.getElementsByClassName("close2")[0];
+    btn2.onclick = function() {
+      modal2.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span2.onclick = function() {
+      modal2.style.display = "none";
+    }
+    window.onclick = function(event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+  }
+    </script>
+
+
+        <script>
+var modal1 = document.getElementById("myModal1");
+  
+  // Get the button that opens the modal
+  var btn1 = document.getElementById("myBtn1");
+  
+  // Get the <span> element that closes the modal
+  var span1 = document.getElementsByClassName("close1")[0];
+  btn1.onclick = function() {
+    modal1.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span1.onclick = function() {
+    modal1.style.display = "none";
+  }
+  </script>
+
+
+
+<script>
+  var modal3 = document.getElementById("myModal3");
+    
+    // Get the button that opens the modal
+    var btn3 = document.getElementById("myBtn3");
+    
+    // Get the <span> element that closes the modal
+    var span3 = document.getElementsByClassName("close3")[0];
+    btn3.onclick = function() {
+      modal3.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span3.onclick = function() {
+      modal3.style.display = "none";
+    }
+    </script>
+
+
+
+
+
+<script>
+  var modal4 = document.getElementById("myModal4");
+    
+    // Get the button that opens the modal
+    var btn4 = document.getElementById("myBtn4");
+    
+    // Get the <span> element that closes the modal
+    var span4 = document.getElementsByClassName("close4")[0];
+    btn4.onclick = function() {
+      modal4.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span4.onclick = function() {
+      modal4.style.display = "none";
+    }
+    </script>
+
+
+
+
+<script>
+  var modal5 = document.getElementById("myModal5");
+    
+    // Get the button that opens the modal
+    var btn5 = document.getElementById("myBtn5");
+    
+    // Get the <span> element that closes the modal
+    var span5 = document.getElementsByClassName("close5")[0];
+    btn5.onclick = function() {
+      modal5.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span5.onclick = function() {
+      modal5.style.display = "none";
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+  
+var k=[];
+	k[0]=0;
+	function c1()
+	{
+		
+
+		
+		k[0]=k[0]+10;
+		document.getElementById("am").innerHTML=""+k[0];
+		
+	}
+	function c2()
+	{
+		
+
+		
+		k[0]=k[0]+100;
+		document.getElementById("am").innerHTML=""+k[0];
+		
+	}
+	function c3()
+	{
+		
+
+		
+		k[0]=k[0]+1000;
+		document.getElementById("am").innerHTML=""+k[0];
+		
+	}
+	function c4()
+	{
+		
+
+		
+		k[0]=k[0]+10000;
+		document.getElementById("am").innerHTML=""+k[0];
+		
+	}
+
+
+  function submit1()
+  {
+    var form = document.getElementById("test");
+    var r1=document.getElementById("q1").checked;
+    var r2=document.getElementById("q2").checked;
+    var r3=document.getElementById("q3").checked;
+    var r4=document.getElementById("q4").checked;
+    var r5=document.getElementById("q5").checked;
+    var r6=document.getElementById("q6").checked;
+
+if(k[0]==0)
+{
+  alert("Contract Amount shouldnt be empty");
+  if(!(r1 || r2 || r3 || r4 || r5 || r6))
+  {
+    alert("Select any one of the contestant name");
+  }
+}
+else if(!(r1 || r2 || r3 || r4 || r5 || r6))
+{
+  alert("Select any one of the contestant name");
+}
+
+else
+{
+  var a=[]
+  a[0]=0
+  firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).once("value").then(function(snapshot)
+    {
+a[0]=snapshot.val().balance;
+if(a[0]<k[0])
+{
+  alert("Contract Amount exceeded the balance");
+}
+else{
+  firebase.database().ref("bigboss").child("users").child(uid).child("quiter").push().set(
+      {
+selected:form.elements["q"].value,
+betting:k[0]
+      }
+    );
+    firebase.database().ref("bigboss").child("users").child(uid).child("balance").set(a[0]-k[0]);
+  
+    setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+}
+    });
+    
+  
+  
+    modal.style.display = "none";
+  } else {
+   
+  }
+});
+
+
+}
+
+  }
+  
+
+        </script>
+        <script>
+           firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).once("value").then(function(snapshot)
+    {
+document.getElementById("user").innerHTML=snapshot.val().name;
+document.getElementById("email").innerHTML=snapshot.val().email;
+document.getElementById("bal").innerHTML=snapshot.val().balance;
+    });
+  
+  } else {
+   
+  }
+});
+        </script>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
+  function v1()
+  {
+    
+   
+    firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).child("winner").set(
+      {
+winner:"Siri"
+      }
+    );
+  
+    setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+  } else {
+   
+  }
+});
+
+  }
+
+
+
+  function v2()
+  {
+    firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).child("winner").set(
+      {
+winner:"Sreeram"
+      }
+    );
+  
+   setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+  } else {
+   
+  }
+});
+
+  }
+
+
+
+
+
+  function v3()
+  {
+    firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).child("winner").set(
+      {
+winner:"Sunny"
+      }
+    );
+  
+    setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+  } else {
+   
+  }
+});
+
+  }
+
+
+
+
+  function v4()
+  {
+    firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).child("winner").set(
+      {
+winner:"Shanmukh"
+      }
+    );
+  
+    setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+  } else {
+   
+  }
+});
+
+  }
+
+
+
+  function v5()
+  {
+    firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).child("winner").set(
+      {
+winner:"kajal"
+      }
+    );
+  
+    setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+  } else {
+   
+  }
+});
+
+  }
+
+
+
+  function v6()
+  {
+    firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).child("winner").set(
+      {
+winner:"Maanas"
+      }
+    );
+  
+    setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+  } else {
+   
+  }
+});
+
+  }
+
+
+  </script>
+
+
+<script>
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  
+  firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(uid).once("value").then(function(snapshot)
+    {
+
+      snapshot.forEach(function(snap)
+      {
+        if(snap.key=="top5")
+        {
+          
+          firebase.database().ref("bigboss").child("users").child(uid).child("top5").once("value").then(function(snapshot)
+          {
+
+            snapshot.forEach(function(snapi)
+            {
+              var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+              cell1.innerHTML="Top 5 Contestants";
+              cell2.innerHTML = " "+snapi.val().betting;
+              cell3.innerHTML="Top -1 : "+snapi.val().top1+"<br>"+"Top -2 : "+snapi.val().top2+"<br>"+"Top -3 : "+snapi.val().top3+"<br>"+"Top -4 : "+snapi.val().top4+"<br>"+"Top -5 : "+snapi.val().top5
+            });
+
+
+          });
+
+
+        }
+
+        if(snap.key=="winner")
+        {
+          firebase.database().ref("bigboss").child("users").child(uid).child("winner").once("value").then(function(snap2){
+
+            var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  cell1.innerHTML="Biggboss 5 Winner";
+  cell2.innerHTML = "0";
+  cell3.innerHTML = "Winner : "+snap2.val().winner;
+
+          });
+        }
+
+
+
+        if(snap.key=="quiter")
+        {
+          
+          firebase.database().ref("bigboss").child("users").child(uid).child("quiter").once("value").then(function(snap3)
+          {
+
+            snap3.forEach(function(snapi3)
+            {
+              var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+              cell1.innerHTML="Quit from finalist (Will take Some % money)";
+              cell2.innerHTML = snapi3.val().betting;
+              cell3.innerHTML=snapi3.val().selected;
+            });
+
+
+          });
+
+
+        }
+
+
+        if(snap.key=="eliminate")
+        {
+          
+          firebase.database().ref("bigboss").child("users").child(uid).child("eliminate").once("value").then(function(snap4)
+          {
+
+            snap4.forEach(function(snapi4)
+            {
+              var row = table.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+              cell1.innerHTML="This Week Elimination";
+              cell2.innerHTML = snapi4.val().betting;
+              cell3.innerHTML=snapi4.val().selected;
+            });
+
+
+          });
+
+
+        }
+
+
+
+
+      });
+    });
+  
+    modal.style.display = "none";
+  } else {
+   
+  }
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+  var kk=[];
+    kk[0]=0;
+    function cc1()
+    {
+      
+  
+      
+      kk[0]=kk[0]+10;
+      document.getElementById("amm").innerHTML=""+kk[0];
+      
+    }
+    function cc2()
+    {
+      
+  
+      
+      kk[0]=kk[0]+100;
+      document.getElementById("amm").innerHTML=""+kk[0];
+      
+    }
+    function cc3()
+    {
+      
+  
+      
+      kk[0]=kk[0]+1000;
+      document.getElementById("amm").innerHTML=""+kk[0];
+      
+    }
+    function cc4()
+    {
+      
+  
+      
+      kk[0]=kk[0]+10000;
+      document.getElementById("amm").innerHTML=""+kk[0];
+      
+    }
+  
+  
+    function submit11()
+    {
+      var formm = document.getElementById("testt");
+      var rr1=document.getElementById("qq1").checked;
+      var rr2=document.getElementById("qq2").checked;
+      var rr3=document.getElementById("qq3").checked;
+      var rr4=document.getElementById("qq4").checked;
+      var rr5=document.getElementById("qq5").checked;
+      var rr6=document.getElementById("qq6").checked;
+  
+  if(kk[0]==0)
+  {
+    alert("Contract Amount shouldnt be empty");
+    if(!(rr1 || rr2 || rr3 || rr4 || rr5 || rr6))
+    {
+      alert("Select any one of the contestant name");
+    }
+  }
+  else if(!(rr1 || rr2 || rr3 || rr4 || rr5 || rr6))
+  {
+    alert("Select any one of the contestant name");
+  }
+  
+  else
+  {
+    var aa=[]
+    aa[0]=0
+    firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      
+      var uid = user.uid;
+      firebase.database().ref("bigboss").child("users").child(uid).once("value").then(function(snapshot)
+      {
+  aa[0]=snapshot.val().balance;
+  if(aa[0]<kk[0])
+  {
+    alert("Contract Amount exceeded the balance");
+  }
+  else{
+    firebase.database().ref("bigboss").child("users").child(uid).child("eliminate").push().set(
+        {
+  selected:formm.elements["qq"].value,
+  betting:kk[0]
+        }
+      );
+      firebase.database().ref("bigboss").child("users").child(uid).child("balance").set(aa[0]-kk[0]);
+    
+      setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+  }
+      });
+      
+    
+    
+      modal.style.display = "none";
+    } else {
+     
+    }
+  });
+  
+  
+  }
+  
+    }
+    
+  
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+  var kkk=[];
+    kkk[0]=0;
+    function ccc1()
+    {
+      
+  
+      
+      kkk[0]=kkk[0]+10;
+      document.getElementById("ammm").innerHTML=""+kkk[0];
+      
+    }
+    function ccc2()
+    {
+      
+  
+      
+      kkk[0]=kkk[0]+100;
+      document.getElementById("ammm").innerHTML=""+kkk[0];
+      
+    }
+    function ccc3()
+    {
+      
+  
+      
+      kkk[0]=kkk[0]+1000;
+      document.getElementById("ammm").innerHTML=""+kkk[0];
+      
+    }
+    function ccc4()
+    {
+      
+  
+      
+      kkk[0]=kkk[0]+10000;
+      document.getElementById("ammm").innerHTML=""+kkk[0];
+      
+    }
+  
+  
+    function submit111()
+    {
+      var t1=document.getElementById("s1").selectedIndex;
+  var y1 = document.getElementById("s1").options;
+
+  var t2=document.getElementById("s2").selectedIndex;
+  var y2 = document.getElementById("s2").options;
+
+  var t3=document.getElementById("s3").selectedIndex;
+  var y3 = document.getElementById("s3").options;
+
+  var t4=document.getElementById("s4").selectedIndex;
+  var y4 = document.getElementById("s4").options;
+
+  var t5=document.getElementById("s5").selectedIndex;
+  var y5 = document.getElementById("s5").options;
+  
+  if(kkk[0]==0)
+  {
+    alert("Contract Amount shouldnt be empty");
+   
+  }
+  
+  else
+  {
+    var aaa=[]
+    aaa[0]=0
+    firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      
+      var uid = user.uid;
+      firebase.database().ref("bigboss").child("users").child(uid).once("value").then(function(snapshot)
+      {
+  aaa[0]=snapshot.val().balance;
+  if(aaa[0]<kkk[0])
+  {
+    alert("Contract Amount exceeded the balance");
+  }
+  else{
+    firebase.database().ref("bigboss").child("users").child(uid).child("top5").push().set(
+        {
+top1:y1[t1].text,
+top2:y2[t2].text,
+top3:y3[t3].text,
+top4:y4[t4].text,
+top5:y5[t5].text,
+  betting:kkk[0]
+        }
+      );
+      firebase.database().ref("bigboss").child("users").child(uid).child("balance").set(aaa[0]-kkk[0]);
+    
+      setTimeout(function(){ window.location.replace('dashboard.html') }, 2000);
+  }
+      });
+      
+    
+    
+      modal.style.display = "none";
+    } else {
+     
+    }
+  });
+  
+  
+  }
+  
+    }
+    
+  
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function submit1111()
+{
+
+var bname=document.getElementById("bank1").value;
+var bnumber=document.getElementById("bank2").value;
+var brenumber=document.getElementById("bank3").value;
+if(bname=="")
+{
+  alert("Bank Holder name shouldn't be empty !");
+}
+if(bnumber=="")
+{
+  alert("Bank Account Number shouldn't be empty !")
+}
+if(brenumber=="")
+{
+  alert("Confirm Bank Account Number shouldn't be empty !")
+}
+if(bnumber!=brenumber)
+{
+  alert("Bank Number and Confirm bank number should be equal !")
+}
+if(bname!="" && bnumber!="" && brenumber!=""  && bnumber==brenumber)
+{
+
+  firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    var uid = user.uid;
+    // ...
+    firebase.database().ref("bigboss").child("users").child(uid).child("bankdetails").push().set(
+      {
+bankname:bname,
+banknumber:bnumber
+      }
+    );
+    setTimeout(function(){ window.location.replace('https://p.paytm.me/xCTH/d797e00') }, 2000);
+
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+
+
+}
+
+
+
+
+}
+
+</script>
+
+<script>
+  function vote()
+  {
+    window.location.href="voting.html";
+  }
+  function epi()
+  {
+    window.location.href="https://www.hotstar.com/14714";
+  }
+  function unseen()
+  {
+    window.location.href="https://www.hotstar.com/in/tv/bigg-boss/14714/list/unseen-on-tv/t-7330";
+  }
+
+  function spicy()
+  {
+    window.location.href="https://www.hotstar.com/in/tv/bigg-boss/14714/list/spicy-specials/t-7342";
+  }
+</script>
+
+
+
+
+
+
+
+<script>
+
+
+  function wha()
+  {
+    window.location.href="http://wa.me/916302427505";
+  }
+  function tel()
+  {
+    window.location.href="https://t.me/nicky_a_common_learner";
+  }
+</script>
+
+
+    </body>
+    
+</html>

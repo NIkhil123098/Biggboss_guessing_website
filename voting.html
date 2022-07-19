@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display:flex;
+  overflow-x:auto;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.place
+{
+    position:absolute;
+    top:42%;
+    width:100%;
+    
+}
+.a1
+{
+  position:absolute;
+  width:95%;
+  left:2.5%;
+  top:1%;
+  height:13%;
+  border-radius:1% ;
+  background-color:pink;
+
+  
+  box-shadow: 1px 1px 20px lightgray;
+}
+
+@font-face {
+  font-family:algeria;
+  src: url(algeria.TTF);
+  
+}
+.hr1{
+    
+  border-top: 1px solid greenyellow;
+
+}
+.hr2{
+    border-bottom:1px solid greenyellow;
+}
+
+
+</style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body background="snow.jpg">
+   <div>
+    <div class="a1">
+        
+      
+
+    <h3 class="a2" style="font-family:algeria;" align="center">BIGGBOSS 5 Telugu Voting Zone</h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+<div class="topnav">
+    <a onclick="bb5favourite()"> BB5 FAVOURITE CONTESTANT</a>
+
+ <a onclick="season()">FAVOURITE BIGG BOSS SEASON</a>
+
+ <a onclick="real()">REAL BB WINNER</a>
+
+<a onclick="unfair()">UNFAIR ELIMINATION</a>
+
+<a onclick="worst()">WORST PERFORMER</a>
+
+<a onclick="pair()">FAVOURITE BB COUPLES</a>
+
+<a onclick="wild()">FAVOURITE WILD CARD ENTRY</a>
+
+<a onclick="bbfavourite()">BB FAVOURITE CONTESTANT</a>
+<a onclick="bb5favourite()" ><i class="fa fa-home" >HOME</a></i>
+</div>
+
+<marquee style="color:violet">new updates soon..</marquee>
+
+
+
+
+
+     <div id='q1' class="place" align="center">
+        <iframe width="620" height="1504" src="https://strawpoll.com/embed/gj3o66e3o" style="width: 100%; height: 1504px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    
+    <div id='q2' class="place" align="center">
+        <iframe width="620" height="572" src="https://strawpoll.com/embed/bcbxj7rh9" style="width: 100%; height: 572px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div id='q3' class="place" align="center">
+        <iframe width="620" height="764" src="https://strawpoll.com/embed/5e2f6vr2q" style="width: 100%; height: 764px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id='q4' class="place" align="center">
+        <iframe width="620" height="608" src="https://strawpoll.com/embed/vod8r9jf9" style="width: 100%; height: 608px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id='q5' class="place" align="center">
+        <iframe width="620" height="1020" src="https://strawpoll.com/embed/s1uyow6su" style="width: 100%; height: 1020px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id='q6' class="place" align="center">
+        <iframe width="620" height="956" src="https://strawpoll.com/embed/rcv618x4k" style="width: 100%; height: 956px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id='q7' class="place" align="center">
+        <iframe width="620" height="828" src="https://strawpoll.com/embed/w3yezfoj8" style="width: 100%; height: 828px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id='q8' class="place" align="center">
+        <iframe width="620" height="5948" src="https://strawpoll.com/embed/fch8fpvdc" style="width: 100%; height: 5948px;" frameborder="0" allowfullscreen></iframe>
+    </div>
+   
+  
+<script>
+   
+ 
+    
+function bb5favourite(){
+
+document.getElementById('q1').style.visibility="visible";
+document.getElementById('q2').style.visibility="hidden";
+document.getElementById('q3').style.visibility="hidden";
+document.getElementById('q4').style.visibility="hidden";
+document.getElementById('q5').style.visibility="hidden";
+document.getElementById('q6').style.visibility="hidden";
+document.getElementById('q7').style.visibility="hidden";
+document.getElementById('q8').style.visibility="hidden";
+
+
+
+
+
+
+}
+
+function season(){
+    document.getElementById('q2').style.visibility="visible";
+document.getElementById('q1').style.visibility="hidden";
+document.getElementById('q3').style.visibility="hidden";
+document.getElementById('q4').style.visibility="hidden";
+document.getElementById('q5').style.visibility="hidden";
+document.getElementById('q6').style.visibility="hidden";
+document.getElementById('q7').style.visibility="hidden";
+document.getElementById('q8').style.visibility="hidden";
+
+}
+function real(){
+document.getElementById('q3').style.visibility="visible";
+document.getElementById('q2').style.visibility="hidden";
+document.getElementById('q1').style.visibility="hidden";
+document.getElementById('q4').style.visibility="hidden";
+document.getElementById('q5').style.visibility="hidden";
+document.getElementById('q6').style.visibility="hidden";
+document.getElementById('q7').style.visibility="hidden";
+document.getElementById('q8').style.visibility="hidden";
+
+} 
+                 function unfair(){
+                    document.getElementById('q4').style.visibility="visible";
+document.getElementById('q2').style.visibility="hidden";
+document.getElementById('q3').style.visibility="hidden";
+document.getElementById('q1').style.visibility="hidden";
+document.getElementById('q5').style.visibility="hidden";
+document.getElementById('q6').style.visibility="hidden";
+document.getElementById('q7').style.visibility="hidden";
+document.getElementById('q8').style.visibility="hidden";
+
+}
+
+
+function worst(){
+document.getElementById('q5').style.visibility="visible";
+document.getElementById('q2').style.visibility="hidden";
+document.getElementById('q3').style.visibility="hidden";
+document.getElementById('q4').style.visibility="hidden";
+document.getElementById('q1').style.visibility="hidden";
+document.getElementById('q6').style.visibility="hidden";
+document.getElementById('q7').style.visibility="hidden";
+document.getElementById('q8').style.visibility="hidden";
+
+}
+               function pair(){
+                document.getElementById('q6').style.visibility="visible";
+document.getElementById('q2').style.visibility="hidden";
+document.getElementById('q3').style.visibility="hidden";
+document.getElementById('q4').style.visibility="hidden";
+document.getElementById('q5').style.visibility="hidden";
+document.getElementById('q1').style.visibility="hidden";
+document.getElementById('q7').style.visibility="hidden";
+document.getElementById('q8').style.visibility="hidden";
+
+}
+
+function wild(){
+document.getElementById('q7').style.visibility="visible";
+document.getElementById('q2').style.visibility="hidden";
+document.getElementById('q3').style.visibility="hidden";
+document.getElementById('q4').style.visibility="hidden";
+document.getElementById('q5').style.visibility="hidden";
+document.getElementById('q6').style.visibility="hidden";
+document.getElementById('q1').style.visibility="hidden";
+document.getElementById('q8').style.visibility="hidden";
+
+}
+                              function bbfavourite(){
+                                document.getElementById('q8').style.visibility="visible";
+document.getElementById('q2').style.visibility="hidden";
+document.getElementById('q3').style.visibility="hidden";
+document.getElementById('q4').style.visibility="hidden";
+document.getElementById('q5').style.visibility="hidden";
+document.getElementById('q6').style.visibility="hidden";
+document.getElementById('q7').style.visibility="hidden";
+document.getElementById('q1').style.visibility="hidden";
+
+}
+
+</script>
+
+</body>
+
+</html>
+
+

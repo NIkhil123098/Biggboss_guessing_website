@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>top5</title>
+
+<style>
+
+	.table,td{
+		width:100%;
+		border:1px solid black;
+		size:10px;
+	}
+	.submit{
+background-color:green;
+	}
+	.reset{
+		background-color:red;
+	}
+</style>
+</head>
+<body>
+	BEFORE BALANCE<h1 id="bal1">0</h1>
+	AFTER BALANCE<h1 id="bal2"></h1>
+<hr color="orange" size="3">
+<h1>TOP 5 CONTESTANTS</h1>
+<hr color="purple" size="3">
+
+<form method="post">
+
+	Top : 1] &nbsp; <select id="s1">
+		<option>Kajal</option>
+		<option>Siri</option>
+		<option>Sunny</option>
+		<option>Shannu</option>
+		<option>Maanas</option>
+		<option>Sriram</option>
+	</select> <br><br>
+	    2]<select id="s2">
+			<option>Kajal</option>
+			<option>Siri</option>
+			<option>Sunny</option>
+			<option>Shannu</option>
+			<option>Maanas</option>
+			<option>Sriram</option>
+		</select><br><br>
+			3]<select id="s3">
+				<option>Kajal</option>
+				<option>Siri</option>
+				<option>Sunny</option>
+				<option>Shannu</option>
+				<option>Maanas</option>
+				<option>Sriram</option>
+			</select> <br><br>
+				4]<select id="s4">
+					<option>Kajal</option>
+					<option>Siri</option>
+					<option>Sunny</option>
+					<option>Shannu</option>
+					<option>Maanas</option>
+					<option>Sriram</option>
+				</select> <br><br>
+					5]<select id="s5">
+						<option>Kajal</option>
+						<option>Siri</option>
+						<option>Sunny</option>
+						<option>Shannu</option>
+						<option>Maanas</option>
+						<option>Sriram</option>
+					</select>
+<br><br>
+
+<span onclick="c1()">10</span>
+<br><span onclick="c2()">100</span>
+<br><span onclick="c3()">1000</span>
+<br><span onclick="c4()">10000</span>
+
+<br>
+<span id="am">0</span>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" class='reset'>
+</form>
+<button type="submit" class="submit" onclick="submit1()">Submit</button>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+<script>
+	var a=[]
+	a[0]=0;
+	function c1()
+	{
+		
+
+		
+		a[0]=a[0]+10;
+		document.getElementById("am").innerHTML=""+a[0];
+		
+	}
+	function c2()
+	{
+		
+
+		
+		a[0]=a[0]+100;
+		document.getElementById("am").innerHTML=""+a[0];
+		
+	}
+	function c3()
+	{
+		
+
+		
+		a[0]=a[0]+1000;
+		document.getElementById("am").innerHTML=""+a[0];
+		
+	}
+	function c4()
+	{
+		
+
+		
+		a[0]=a[0]+10000;
+		document.getElementById("am").innerHTML=""+a[0];
+		
+	}
+</script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyACaDrHs0u3i4qywXDxSjK76P1Emvdb3sQ",
+  authDomain: "bigboss-dba40.firebaseapp.com",
+  projectId: "bigboss-dba40",
+  storageBucket: "bigboss-dba40.appspot.com",
+  messagingSenderId: "589923447712",
+  appId: "1:589923447712:web:2d966d45da6168c65beac5",
+  measurementId: "G-GBCPPJCESN"
+};
+
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  function submit1()
+  {
+	
+
+var t1=document.getElementById("s1").selectedIndex;
+  var y1 = document.getElementById("s1").options;
+
+  var t2=document.getElementById("s2").selectedIndex;
+  var y2 = document.getElementById("s2").options;
+
+  var t3=document.getElementById("s3").selectedIndex;
+  var y3 = document.getElementById("s3").options;
+
+  var t4=document.getElementById("s4").selectedIndex;
+  var y4 = document.getElementById("s4").options;
+
+  var t5=document.getElementById("s5").selectedIndex;
+  var y5 = document.getElementById("s5").options;
+  
+  
+  firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    var uid = user.uid;
+
+
+firebase.database().ref("bigboss").child("users").child(uid).child("top5").push().set(
+{
+top1:y1[t1].text,
+top2:y2[t2].text,
+top3:y3[t3].text,
+top4:y4[t4].text,
+top5:y5[t5].text,
+
+bet:a[0]
+
+
+});
+
+ 
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    var uid = user.uid;
+    firebase.database().ref("bigboss").child("users").child(user.uid).once("value")
+  .then(function(snap) {
+ var s=snap.val().balance;
+ document.getElementById('bal1').innerHTML=snap.val().balance;
+ var bal=s-a[0];
+ document.getElementById('bal2').innerHTML=bal;
+ if(a[0]>bal){
+	 alert("insufficient balance")
+ } else{
+
+
+
+firebase.database().ref("bigboss").child("users").child(uid).child("balance").set(bal);
+
+ 
+ }
+
+	
+  });
+  
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+  }
+
+
+</script>
+</body>
+</html>
